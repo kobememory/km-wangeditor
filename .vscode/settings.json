@@ -1,0 +1,17 @@
+{
+  "cSpell.words": [
+    "corejs",
+    "cssnano",
+    "kobememory",
+    "wangeditor"
+  ],
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+  },
+  "eslint.validate": ["javascript"],
+
+  "editor.detectIndentation": false,
+  "editor.tabSize": 2
+}

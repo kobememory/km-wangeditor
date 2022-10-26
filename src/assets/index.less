@@ -1,0 +1,21 @@
+@import '@wangeditor/editor/dist/css/style.css';
+
+.w-e-text-container {
+  [data-slate-editor] {
+    padding: 8px 16px;
+    p {
+      margin: 0;
+      line-height: 22px;
+    }
+
+    [data-selected='true'] {
+      transition: box-shadow 100ms 100ms;
+    }
+  }
+}
+
+.w-e-text-placeholder {
+  left: 16px;
+  top: 8px;
+  font-style: normal;
+}

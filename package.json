@@ -1,0 +1,84 @@
+{
+  "name": "km-wangeditor",
+  "version": "0.1.0",
+  "description": "Web 富文本编辑器 - based on wangEditor v5",
+  "keywords": [
+    "rich text",
+    "editor",
+    "富文本",
+    "编辑器",
+    "占位符",
+    "wangeditor"
+  ],
+  "author": "kobememory <lantian.kobe@gmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "types": "types/index.d.ts",
+  "main": "dist/index.umd.js",
+  "module": "dist/index.esm.js",
+  "browser": {
+    "./dist/index.umd.js": "./dist/index.umd.js",
+    "./dist/index.esm.js": "./dist/index.esm.js"
+  },
+  "files": [
+    "dist",
+    "types"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kobememory/km-wangeditor"
+  },
+  "scripts": {
+    "dev": "cd playground && yarn && yarn dev",
+    "build": "rimraf dist/* && cross-env NODE_ENV=production rollup -c rollup.config.js",
+    "format": "yarn prettier --write",
+    "lint": "eslint \"src/**/*.+(ts|tsx)\"",
+    "prettier": "prettier --ignore-path .gitignore \"src/**/*.(ts|tsx)\""
+  },
+  "lint-staged": {
+    "src/**/*.{ts,tsx}": [
+      "yarn lint",
+      "yarn format",
+      "git add ."
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "devDependencies": {
+    "@babel/core": "^7.19.3",
+    "@babel/plugin-transform-runtime": "^7.19.1",
+    "@babel/preset-env": "^7.19.4",
+    "@babel/preset-typescript": "^7.18.6",
+    "@babel/runtime-corejs3": "^7.19.4",
+    "@rollup/plugin-babel": "^6.0.0",
+    "@rollup/plugin-commonjs": "^23.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.40.1",
+    "@typescript-eslint/parser": "^5.40.1",
+    "autoprefixer": "^10.4.12",
+    "core-js": "^3.25.5",
+    "cross-env": "^7.0.3",
+    "cssnano": "^5.1.13",
+    "eslint": "^8.25.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "less": "^4.1.3",
+    "lodash-es": "^4.17.21",
+    "postcss": "^8.4.18",
+    "prettier": "^2.7.1",
+    "rimraf": "^3.0.2",
+    "rollup": "^3.1.0",
+    "rollup-plugin-cleanup": "^3.2.1",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.34.1",
+    "rollup-plugin-visualizer": "^5.8.3",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "@wangeditor/editor": "5.1.12"
+  }
+}
