@@ -1,6 +1,6 @@
 {
   "name": "km-wangeditor",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Web 富文本编辑器 - based on wangEditor v5",
   "keywords": [
     "rich text",
