@@ -46,7 +46,7 @@ export function createRollupConfig(customConfig = {}) {
         mainFields: format === 'esm' ? ['module', 'main'] : ['main'],
         extensions,
       }),
-      commonjs({}),
+      commonjs(),
       babel({
         babelHelpers: 'runtime',
         exclude: 'node_modules/**',

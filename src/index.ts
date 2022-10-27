@@ -1,3 +1,4 @@
+import '@wangeditor/editor/dist/css/style.css'
 import './assets/index.less'
 
 import type { PlaceholderInfo } from './modules/placeholder/custom-types'

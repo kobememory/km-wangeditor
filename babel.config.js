@@ -1,21 +1,21 @@
 export default {
   presets: [
     [
-      "@babel/preset-env",
+      '@babel/preset-env',
       {
         modules: false,
-        useBuiltIns: "usage",
+        useBuiltIns: 'usage',
         corejs: 3,
-      }
+      },
     ],
-    ["@babel/preset-typescript"]
+    ['@babel/preset-typescript'],
   ],
   plugins: [
     [
-      "@babel/plugin-transform-runtime",
+      '@babel/plugin-transform-runtime',
       {
-        corejs: 3
-      }
-    ]
-  ]
+        corejs: 3,
+      },
+    ],
+  ],
 }
