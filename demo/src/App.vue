@@ -1,13 +1,13 @@
 <template>
   <div>
     <div class="button-wrap">
-      <div
+      <button
         v-for="item in placeholderList"
         :key="item.value"
         @click="() => handleInsertPlaceholder(item.value, item.alias)"
       >
         {{ item.buttonText }}
-      </div>
+      </button>
 
       <br />
       <button @click="clearEditor">清空</button>
@@ -54,6 +54,7 @@
       selector: "#editor-container",
       html: "<p>hello world</p>",
       config: {
+        placeholder: '请输入..',
         maxLength: 30,
         onChange() {
           showContent()

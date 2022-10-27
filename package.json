@@ -1,6 +1,6 @@
 {
   "name": "km-wangeditor",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Web 富文本编辑器 - based on wangEditor v5",
   "keywords": [
     "rich text",
@@ -29,7 +29,7 @@
     "url": "https://github.com/kobememory/km-wangeditor"
   },
   "scripts": {
-    "dev": "cd playground && yarn && yarn dev",
+    "dev": "cd demo && yarn && yarn dev",
     "build": "rimraf dist/* && cross-env NODE_ENV=production rollup -c rollup.config.js",
     "format": "yarn prettier --write",
     "lint": "eslint \"src/**/*.+(ts|tsx)\"",

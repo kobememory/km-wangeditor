@@ -2,6 +2,11 @@
 
 基本用法请参考：https://www.wangeditor.com/
 
+## 介绍
+
+Try out the [demo](https://kobememory.github.io/km-wangeditor/)!
+
+![](./_img/demo.png)
 
 ### 新增Placeholder(占位符)模块
 
